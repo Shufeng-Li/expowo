@@ -342,7 +342,7 @@ powoMap <- function(inputdf = NULL,
                         bre_color) {
 
   p <- ggplot2::ggplot(data = world_plant) +
-    ggplot2::geom_sf(ggplot2::aes(fill = world_plant$Freq), colour = "gray60",
+    ggplot2::geom_sf(ggplot2::aes(fill = Freq), colour = "gray60",
                      size = 0.05) +
     ggplot2::theme_void() +
     ggplot2::theme(legend.position = c(0.2, 0.3),
